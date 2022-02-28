@@ -1,0 +1,47 @@
+.landing-page{
+    background: url(../../assets/stars.png);
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.landing-page h1{
+    font-family:'Open Sans', sans-serif;
+    color: #FE3B1F;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 96px;
+}
+
+.start-questionari{
+    text-decoration: none;
+    width: 396px;
+    height: 79px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin: 90px 0px;
+    color: #FFFFFF;
+    background-color: #FE3B1F;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submited-show{
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.character{
+    margin: 0;
+}
