@@ -1,0 +1,35 @@
+.skills{
+    padding: 10px 160px 10px 0px;
+    border: 1px solid gray;
+    display: flex;
+}
+.cordinates-container input{
+    margin-top: 40px;
+    padding: 10px 70px 10px 0px;
+}
+.cordinates-container{
+    position: relative;
+}
+.add-programming__language{
+     padding: 10px 20px;
+     margin-top: 15px;
+    background-color: #fe3b1f;
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    cursor: pointer;
+    color: white;
+}
+.technical__list{
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 5px 40px 0px 1px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.skills-table{
+    position: absolute;
+    top: 300px;
+    
+}
