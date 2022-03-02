@@ -66,7 +66,6 @@ function Technical() {
         <div></div>
         <div></div>
         <div></div>
-        <div></div>
         <Link to="3" ><img src={next} alt="nextbtn" /></Link>
       </div>
       <div className='origins-container'>

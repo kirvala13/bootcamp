@@ -27,15 +27,12 @@ useEffect(()=>{
   }
 },[name,lastName])
   const saveClick=()=>{
-      const data=sentObj;
-      const oldData = JSON.parse(localStorage.getItem("data"))
-      oldData.push(data)
-      localStorage.setItem('data', JSON.stringify(oldData))
+      localStorage.setItem('data', JSON.stringify(sentObj))
   }
 
   return (
-    <div className='personal__container'>
-      <div className='cordinates-container'>
+    <div className='personal__container '>
+      <div className='cordinates-container '>
         <h1>Hey, Rocketeer, what are your coordinates?</h1>
         <form className='personal-form__container'>
           <input type="text" placeholder='First name' onChange={(e)=>setName(e.target.value)} />
@@ -51,8 +48,7 @@ useEffect(()=>{
             <div></div>
             <div></div>
             <div></div>
-            <div></div>
-           <Link to="2" onClick={saveClick}><img src={next} alt="nextbtn"/></Link>
+          {valid?<Link ><img src={next} alt="nextbtn"/></Link>:<Link to="2" onClick={saveClick}><img src={next} alt="nextbtn"/></Link>} 
           </div>
         </form>
       </div>

@@ -18,7 +18,7 @@ function Routers() {
        <Route path={`/2`} component={Technical}/>
        <Route path={`/3`} component={Covid}/>
        <Route path={`/4`} component={Insight}/>
-       <Route path={`/5`} component={Submit}/>
+       <Route path={`/submit`} component={Submit}/>
        <Route path={`/submited`} component={Submited}/>
        <Redirect exact to='/'/>
      </Switch>
