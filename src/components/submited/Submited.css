@@ -1,0 +1,25 @@
+.submited{
+    background-color: #0C0D0E;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.submited-button{
+    width: 150px;
+    height: 40px;
+    background: #FE3B1F;
+   border-radius: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   cursor: pointer;
+}
+
+.submited a{
+    color: white;
+    margin-top: 20px;
+}

@@ -1,0 +1,47 @@
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.personal-info h1{
+    font-family: Montserrat;
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #FE3B1F;
+}
+.personal-info{
+  width: 40%;
+  
+}
+.user__info{
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.user__span{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+.skillset{
+    width: 40%;
+
+}
+.skillset h1{
+    font-family: Montserrat;
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+color: #FE3B1F;
+}

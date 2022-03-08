@@ -20,6 +20,7 @@ function Routers() {
        <Route path={`/4`} component={Insight}/>
        <Route path={`/submit`} component={Submit}/>
        <Route path={`/submited`} component={Submited}/>
+       <Route path={"/thanks"} component={Thanks}/>
        <Redirect exact to='/'/>
      </Switch>
     </Router>

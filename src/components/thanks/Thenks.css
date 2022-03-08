@@ -1,0 +1,19 @@
+.thanks{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks h1{
+    font-family: Montserrat;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 78px;
+letter-spacing: 0em;
+text-align: center;
+color: #FE3B1F;
+
+}

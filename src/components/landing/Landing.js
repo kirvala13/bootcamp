@@ -7,7 +7,7 @@ function Landing() {
     <div className='landing-page'>
       <h1>Welcome Rocketeer!</h1>
       <Link to="1" className='start-questionari'>Start Questionnaire</Link>
-      <Link to="submited" className='submited-show'>Submited Applications</Link>
+      <Link to="submit" className='submited-show'>Submited Applications</Link>
       <div className='character'>
         <img src={rocketman}/>
       </div>

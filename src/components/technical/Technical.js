@@ -6,26 +6,38 @@ import next from "../../assets/Next.png"
 import { Link } from 'react-router-dom'
 import removeImg from "../../assets/Remove.png"
 function Technical() {
+  const[id,setId]=useState(0)
   const [skills, setSkills] = useState([]);
   const [experience, setExperience] = useState('')
   const [language, setLanguage] = useState("")
-
+  const [skillsValid,setSkillsValid]=useState(false)
   if (localStorage.getItem("tech") === null) {
     localStorage.setItem("tech", "[]")
   }
-
+ 
   const TechClick = (e, i) => {
+    setId(id+1)
     const newObj = {
+      id:id,
       experience: experience,
       language: language
     }
     const tech = newObj;
     const techdata = JSON.parse(localStorage.getItem("tech"))
     techdata.push(tech)
-    localStorage.setItem('tech', JSON.stringify(techdata))
+     localStorage.setItem('tech', JSON.stringify(techdata))
     window.location.reload()
+    console.log(newObj)
   }
   const technicalList = JSON.parse(localStorage.getItem("tech"))
+  useEffect(()=>{
+    if(technicalList.length<1){
+      setSkillsValid(true)
+    }else{
+      setSkillsValid(false)
+    }
+  },[])
+  
   const deleteSkill = (index) => {
     window.location.reload()
     const splic = technicalList.splice(index, 1)
@@ -53,7 +65,7 @@ function Technical() {
           {
             technicalList.map((res, index) => {
               return <div key={index} className='technical__list'>
-                <p>{res.language}</p> <p>{`Years of Experiance: ${res.experience}`}</p> <img onClick={() => deleteSkill(index)} src={removeImg} />
+                <p>{res.language}</p> <p>{` Years of Experiance: ${res.experience}`}</p> <img onClick={() => deleteSkill(index)} src={removeImg} />
               </div>
             })
           }
@@ -66,7 +78,7 @@ function Technical() {
         <div></div>
         <div></div>
         <div></div>
-        <Link to="3" ><img src={next} alt="nextbtn" /></Link>
+     {skillsValid?<Link onClick={()=>skillsValid?alert("add skills"):null} to='2'><img src={next} alt="nextbtn" /></Link>:<Link to="3" ><img src={next} alt="nextbtn" /></Link>}  
       </div>
       <div className='origins-container'>
         <h1>A bit about our battles</h1>
